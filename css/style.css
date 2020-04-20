@@ -5,7 +5,7 @@ body{
   background-color: whitesmoke;
 }
 #bg-overlay {
-    background: linear-gradient(rgba(128,128,128,0.5)	, rgba(128,128,128,0.2)	), url("../image/green.png");
+    background: linear-gradient(rgba(128,128,128,0.5)	, #80808033	), url("../image/green1.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center;
@@ -619,7 +619,7 @@ body{
 /*contact me*/
 
 #contactme{
-  background: linear-gradient(rgba(128,128,128,0.2),#264f5a), url("../image/jsr.PNG");
+  background: linear-gradient(rgba(128,128,128,0.2),#264f5a), url("../image/jsr1.jpg");
   background-repeat: no-repeat;
   background-size: cover ;
   background-position: center center;
