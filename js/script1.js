@@ -49,7 +49,7 @@ $("#myCarousel").on("slide.bs.carousel", function(e) {
   }
 });
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 50) {
+  if ($(this).scrollTop() >= 50) {
       $('#back-to-top').fadeIn();
   } else {
       $('#back-to-top').fadeOut();
@@ -59,7 +59,7 @@ $(window).scroll(function () {
 // scroll body to 0px on click
 
 $('#back-to-top').click(function () {
-  $('#back-to-top').tooltip('hide');
+  //$('#back-to-top').tooltip('hide');
   $('body,html').animate({
       scrollTop: 0
   }, 800);

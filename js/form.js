@@ -8,9 +8,13 @@ $("#formSubmit").click(function(e){
         message_html: $('#message').val(),
         phone: 8899234560
     };
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     //Check if all the fiedls are completely filled
     if(!(data.from_email) || !(data.from_name) || !(data.message_html) || !(data.subject)){
-        $("#show").text("Please fill the form completely.");
+        $("#show").text("Please fill the form completely.");   
+    }
+    else if(!emailReg.test(data.from_email)){
+        $("#show").text('Enter the valid Email');
     }
     else{
         $.ajax('https://emailapisawa.herokuapp.com/email', {
